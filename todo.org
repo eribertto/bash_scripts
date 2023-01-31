@@ -1,0 +1,5 @@
+* Mon Mar 30, 2020 06:43
+  * Edit sys_info_script and add option for root to check disk space of all users.
+* Tue Mar 31, 2020 06:46
+* Finish pp. 362 final script edit
+** Next session resume to chapter 28 reading keyboard input pp 363

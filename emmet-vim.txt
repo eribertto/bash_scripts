@@ -1,0 +1,15 @@
+https://github.com/mattn/emmet-vim
+Enable just for html/css
+
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+Redefine trigger key
+
+To remap the default <C-Y> leader:
+
+let g:user_emmet_leader_key='<C-Z>'
+
+Note that the trailing , still needs to be entered, so the new keymap would be <C-Z>,
+More TUTORIALS
+https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL

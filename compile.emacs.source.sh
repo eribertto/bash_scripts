@@ -1,0 +1,39 @@
+#!/bin/bash - 
+# Thu Jan 16, 2020 02:06
+# yum install
+# ensure user uses  or is root; add sanity check code
+# ensure only root executes the script
+if [[ "${UID}" -ne 0 ]]
+then
+	echo "Please run this script with sudo or root."
+	exit 1		# exit as code unsuccessful
+fi
+
+# yum group install -y "Development Tools" 
+yum install -y ncurses-devel \
+gtk+-devel gtk2-devel \
+libXpm-devel \
+libpng-devel \
+giflib-devel \
+libtiff-devel libjpeg-devel \
+ncurses-devel \
+gpm-devel dbus-devel dbus-glib-devel dbus-python \
+GConf2-devel pkgconfig \
+libXft-devel \
+gnutls-devel \
+texi2html texinfo \
+
+# todo: printout below using eof after completing the above lines!
+# Thu Jan 16, 2020 02:06
+# git config
+# git config --global http.postBuffer  524288000
+# git config --global https.postBuffer 524288000
+# git config --global http.sslVerify false
+# 
+# ## git clone
+# git clone https://github.com/emacs-mirror/emacs.git --verbose --progress
+# 
+# 
+# # build
+# cd emacs
+# ./autogen.sh && ./configure && make && make install

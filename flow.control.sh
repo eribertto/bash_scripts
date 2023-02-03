@@ -19,16 +19,21 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-read -rp "What is your answer? " ANSWER
+read -rp "What is your answer? [yes/no/maybe] " ANSWER
 
 # check if string is empty using -z
 if [ -z "$ANSWER" ]; then
     # redirect to stderr
     echo "There is no answer given!" >&2
     exit 1
+#else
+#	echo "OK"
 fi
 
 # check for string equality with '=' or '==' (the former is POSIX compliant)
+# this is equality bcoz there is a space between the equal sign
+# if no space the context is variable assignment
+
 if [ "$ANSWER" = "yes" ]; then
     echo "The answer is YES!"
     elif [ "$ANSWER" = "no" ]; then
@@ -41,7 +46,7 @@ fi
 
 # test for integers
 INT=8
-
+echo "The number is $INT"
 if [ -z "$INT" ]; then
     echo "$INT is empty." >&2
     exit 1
@@ -65,12 +70,12 @@ else
 fi
 
 # modern version of test
-read -rp "Press enter for demo of test NG e.g. modern version: " INPUT
-echo $INPUT
+read -rp "Press enter any number (integer) : " INT
+#echo $INPUT
 # take note of this new syntax
 # using regex to match the string
 ##############
-INT=1.2
+#INT=1.2
 ##############
 if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
     if [ "$INT" -eq 0 ]; then
@@ -90,7 +95,7 @@ if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
         fi
     fi
 else
-    echo "$INT is not integer"
+    echo "$INT doesnt look like an integer"
 fi
 
 

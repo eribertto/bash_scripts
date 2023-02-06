@@ -17,8 +17,7 @@ read -rp "Enter the magic number [1]: " answer
 #fi
 
 # concise style
-echo "shorthand branching style"; sleep 2
-[ $answer = 1 ] \
+[ "$answer" = 1 ] \
 	&& { echo "You guessed the magic number, excellent!" ; exit 0; } \
 	|| { echo "Uh-oh, nope, run away lol!" ; exit 120; }
 

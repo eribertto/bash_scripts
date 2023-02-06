@@ -22,7 +22,6 @@
 # all about positional parameters
 
 echo "
-Number of arguments provided: $#
 \$0 = $0
 \$1 = $1
 \$2 = $2
@@ -33,4 +32,6 @@ Number of arguments provided: $#
 \$7 = $7
 \$8 = $8
 \$9 = $9
+scriptname: $(basename "$0")
+Number of arguments provided: $#
 "

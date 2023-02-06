@@ -5,6 +5,8 @@
 Good reference for parameter expancsion:
 	https://wiki.bash-hackers.org/syntax/pe
 	https://wiki.bash-hackers.org/start
+Shellcheck website:
+	https://github.com/koalaman/shellcheck#user-content-in-your-editor
 
 --
 begin tracking bash scripting exercises

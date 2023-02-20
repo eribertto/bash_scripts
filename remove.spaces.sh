@@ -6,7 +6,7 @@ echo "This script removes spaces in the filenames in the current directory."
 
 for file in *\ *;
 do
-	echo mv -v "$file" "${file// /_}"
+	echo mv -v "$file -->" "${file// /_}"
 done
 read -rp "Is this OK? [N/y] " answer
 

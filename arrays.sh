@@ -3,11 +3,11 @@
 # simple arrays
 
 my_array=("james bond 007" "shawn kemp the reigman" 345 3.1467 "whatever" )
-echo "${my_array[1]}"
-echo "${my_array[-1]}"
-echo "${my_array[-2]}"
+echo "Array no. 2 is: ${my_array[1]}"
+echo "Last array is: ${my_array[-1]}"
+echo "Second to last array is: ${my_array[-2]}"
 # get all the array elements
-echo "${my_array[@]}"
+echo "The whole array is: ${my_array[@]}"
 
 # about substring or slicing in Bash
 

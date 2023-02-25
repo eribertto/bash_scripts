@@ -7,7 +7,8 @@ echo "Array no. 2 is: ${my_array[1]}"
 echo "Last array is: ${my_array[-1]}"
 echo "Second to last array is: ${my_array[-2]}"
 # get all the array elements
-echo "The whole array is: ${my_array[@]}"
+#echo "The whole array is: ${my_array[@]}"
+echo "The whole array is: ${my_array[*]}"
 
 # about substring or slicing in Bash
 

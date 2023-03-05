@@ -29,9 +29,9 @@ print_params () {
 }
 
 pass_params () {
-	echo -e "\n" '$* :'; print_params $*
+	echo -e "\n" '$* :'; print_params "$@"
 	echo -e "\n" '"$*" :'; print_params "$*"
-	echo -e "\n" '$@ :'; print_params $@
+	echo -e "\n" '$@ :'; print_params "$@"
 	echo -e "\n" '"$@" :'; print_params "$@"
 }
 

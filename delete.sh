@@ -18,10 +18,13 @@
 #      REVISION:  ---
 #===============================================================================
 
-#set -o nounset                              # Treat unset variables as an error
+set -o nounset                              # Treat unset variables as an error
 
 E_BADARGS=85
-if [ -z "$1" ]
+#if [ -z "$1" ]
+# if [ $# -lt 1 ] || [ -z "$1" ]
+# check if argument is provided
+if [ $# -lt 1 ]
 then
     echo "Usage: $(basename "$0") filename"
     exit $E_BADARGS

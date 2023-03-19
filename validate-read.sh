@@ -1,12 +1,12 @@
-#!/bin/bash - 
+#!/bin/bash -
 #===============================================================================
 #
 #          FILE: validate-read.sh
-# 
-#         USAGE: ./validate-read.sh 
-# 
+#
+#         USAGE: ./validate-read.sh
+#
 #   DESCRIPTION: demo script of validating user input
-# 
+#
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
 #          BUGS: ---
@@ -21,16 +21,18 @@ set -o nounset                              # Treat unset variables as an error
 
 # common function
 invalid_input () {
-  echo "Invalid input '$REPLY'" >&2
+  # echo "Invalid input '$REPLY'" >&2
+  echo "Invalid input " >&2
   exit 1
 }
 
-read -p "Enter a single argument at the prompt: "
+read -rp "Enter any input you like at the prompt: "
 #default variable to catch input is $REPLY
 
 # input is empty (invalid)
-#[[ -z "$REPLY" ]] && invalid_input
-[[ -z "$REPLY" ]] && echo "Empty input" && invalid_input
+# [[ -z "$REPLY" ]] && invalid_input
+# [[ -z "$REPLY" ]] && echo "Empty input" && invalid_input
+[[ -z "$REPLY" ]] && invalid_input
 
 # input is multiple (arg) items (invalid)
 # see man wc

@@ -1,0 +1,18 @@
+#!/usr/bin/env perl
+
+use v5.40;
+
+# A hash is similar to an array except that instead of indexing with integers, you use strings.
+
+my %people = {
+              "Alice", 1,
+              "Bob", 2,
+              "Ovid", "idiot lol",
+             };
+
+# print $people{'Ovid'}; # note the call to a hash element with singular sigil $
+# print $people{'Alice'};
+my $number = $people{'Bob'};
+print "Bob = $number\n";
+print "Bob = $people{'Bob'}\n";
+## NOTE: this script is not working

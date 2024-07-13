@@ -1,1 +1,6 @@
 This is branch of e590 machine
+** Perl related contents to follow/complete **
+Perl_programming_using_KDE_Kate_editor_in_Linux_tutorial_-_March_2024.mp4
+Learn_Perl_Enough_to_be_dangerous.mp4
+FreeCodeCamp_Perl_Programming_Course_for_Beginners.mp4
+Awk_programming_2023update.mp4

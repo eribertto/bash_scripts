@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use v5.40;
+use v5.38;
 
 # using qw in arrays e.g. a variable preceeded by the sigil @ and the value enclosed in parens
 # the qw operator takes a string and auto insert whitespace in the below list

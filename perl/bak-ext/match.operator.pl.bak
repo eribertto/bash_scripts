@@ -7,7 +7,7 @@ use v5.38;
 
 # update: Smartmatch is now deprecated, see perldoc perldeprecation.
 
-if ( ( '123' + 0 ) ~~ '123.0' ) {    # number and numish comparison
-    say "Matched 1!";
+if (( '123' + 0 ) ~~ '123.0' ) { # number and numish comparison
+say "Matched 1!";
 
 }

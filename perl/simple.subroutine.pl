@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 use v5.38;
+use utf8;
 
 # simple subroutine example
 # From the book Effective Perl Programming 2nd edition 2010
@@ -10,8 +11,9 @@ sub hi {
 }
 
 # called the function
+my $name = 'Eriberto';
 print &hi("Fred");    # old school style
-print hi("Eriberto!\n");
-
 # the parens is optional
-say hi "James Bond";
+print hi("$name.");
+print hi "James Bond. Look no parens here lol :-)";
+say hi "$name" x 3; # string repetition operator

@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 
-use Modern::Perl '2024';
+# use Modern::Perl '2024';
 
-  #use v5.38;
-  #use utf8;
+  use v5.38;
+  use utf8;
 
   # Guess the number game
   # https://code-maven.com/slides/perl/solution-number-guessing-game

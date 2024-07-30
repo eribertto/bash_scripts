@@ -1,7 +1,7 @@
 #!/usr/bin/perl -wl
 
 # https://metacpan.org/pod/Modern::Perl
-use Modern::Perl '2024';
+use v5.38;
 
 my $addition = ( ( 3 + 2 ) * ( 5 - 3 ) / 2 );    # must be declared first
 print "\nArithmetic Operators: $addition";

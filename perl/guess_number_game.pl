@@ -4,6 +4,8 @@
 
   use v5.38;
   use utf8;
+  use warnings;
+  use diagnostics;
 
   # Guess the number game
   # https://code-maven.com/slides/perl/solution-number-guessing-game

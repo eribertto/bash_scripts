@@ -5,6 +5,8 @@ use v5.38;
 use warnings;
 use IO::Prompter;
 
+my $score = prompt 'Enter score:', -number => sub{ 0 <= $_ && $_ <= 100 };
+
 
 # This call has no automatically added options...
 my $assent = prompt "Do you wish to take the test?", -yn;

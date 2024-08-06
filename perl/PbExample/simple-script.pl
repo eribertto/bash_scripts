@@ -21,3 +21,4 @@ else {
 
 my $now = localtime; # get localtime
 say "Hey $name, you ran this script on $now";
+say "The name of this file is ", __FILE__;  # note the special literal __FILE__

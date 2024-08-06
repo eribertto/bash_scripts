@@ -16,8 +16,8 @@ if ($response eq "yes" or $response eq "y"){
     print "Great! Let's get started learning Perl by Examples.\n'";
 }
 else {
-    print "Okay, maybe some other time when you're ready :-)";
+    print "Okay, maybe some other time when you're ready :-)\n";
 }
 
 my $now = localtime; # get localtime
-print "$name, you ran this script on $now";
+say "Hey $name, you ran this script on $now";

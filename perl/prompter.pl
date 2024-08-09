@@ -7,9 +7,11 @@ use IO::Prompter;
 
 my $score = prompt 'Enter score between 1-100:',
   -number => sub { 0 <= $_ && $_ <= 100 };
+say "You entered $score";
 
 # This call has no automatically added options...
 my $assent = prompt "Do you wish to take the test?", -yn;
+exit 1 if not $assent;
 
 {
     use IO::Prompter [ -yesno, -single, -style => 'bold' ];
@@ -22,4 +24,3 @@ my $assent = prompt "Do you wish to take the test?", -yn;
 
 # This call has no automatically added options...
 scalar prompt 'Type any key to start...', -single;
-

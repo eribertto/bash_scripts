@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 
 use v5.38;
+use warnings;
 
 # all about arrays e.g. a variable preceeded by the sigil @ and the value enclosed in parens
 

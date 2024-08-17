@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use v5.40;
+use v5.38;
 
 ## Chapter 1 The Basics of Perl Effective
 ## Check the end of an array having an undef element

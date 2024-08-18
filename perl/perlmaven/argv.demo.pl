@@ -12,8 +12,8 @@ if (not defined $name) {
   die "Need a first name and optional last name!\n";
 }
 if (defined $number) {
-  print "Saved in DB '$name' and '$number'.\n"; # save the variables
+  print "You entered the 2 names '$name' and '$number'.\n"; # save the variables
   exit;
 }
 
-print "Fetch '$name'\n";
+print "You entered the first name '$name'\n";

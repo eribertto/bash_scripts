@@ -6,11 +6,9 @@
 use v5.38;
 use warnings;
 
-
-our $a = 3.1416;                   # global
 {
     my $a = 2.7183;     # Lexical
     print "I am the local $a";
   }
-
+our $a = 3.1416;                   # global
 print $a;

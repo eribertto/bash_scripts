@@ -1,0 +1,1 @@
+{"version":5,"vars":[{"name":"FATAL","kind":12,"line":3},{"line":3,"name":"warnings","kind":2,"containerName":""},{"localvar":"my","name":"$sum","definition":"my","containerName":null,"kind":13,"line":6},{"line":6,"name":"diagnostics","containerName":"","kind":2}]}

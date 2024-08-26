@@ -1,0 +1,1 @@
+{"vars":[{"line":9,"localvar":"my","kind":13,"definition":"my","containerName":null,"name":"@names"},{"line":9,"containerName":"","kind":2,"name":"warnings"},{"containerName":null,"kind":13,"name":"@names","line":10}],"version":5}

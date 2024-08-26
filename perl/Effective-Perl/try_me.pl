@@ -7,10 +7,10 @@ use v5.38;
 use warnings;
 
 
-$a = 3.1416;            # global
+our $a = 3.1416;                   # global
 {
     my $a = 2.7183;     # Lexical
-    print "I am the local \$a $a";
-}
+    print "I am the local $a";
+  }
 
 print $a;

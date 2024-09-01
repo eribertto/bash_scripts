@@ -1,19 +1,56 @@
 #!/usr/bin/env perl
-# Effective Perl Programming 2nd Edition
-# End of the array Chapter 1 the Basics of Perl
+# Learning Perl 8th edition
+# Chapter 3 Lists and Arrays
 
 use v5.38;
 use warnings;
 
+# looping with foreach
+foreach (1..10){
+  print "I can count to $_!\n"; # uses Perls favorite default variable
+}
+
 my @cats     = qw( Buster Roscoe Mimi);
-my $favorite = $cats[8];                         #undefined
-print "My favorite cat is ", $favorite, "\n";    # perldoc -f undef
-
-# replace 2nd array elem with undef
-$cats[1] = undef;
-
+my $favorite = $cats[8]; # undef, out of bounds index member
+print "My favorite cat is ", $favorite, "\n"; # perldoc -f undef
+$favorite = "Tammy"; # replace undef
+push(@cats, $favorite); # Tammy is now the new cats array member
+print "@cats\n";
+my $solo = pop(@cats); # remove the last member
+print "$solo is now a lonely cat.\n";
 # use foreach to loop through the array elements using defined
 foreach my $cat (@cats) {
-    next unless defined $cat;
-    print "I have a cat named $cat\n";
+  next unless defined $cat;
+  print "I have a cat named $cat.\n";
 }
+
+# using shift and unshift to do things on the start of arrays
+my @guys = qw# dino fred barney #;
+print("@guys\n");
+my $di = shift(@guys); # dino is gone from the array
+my $fr = shift(@guys); # fred is gone
+my $ba = shift(@guys);
+push(@cats, $di);
+push(@cats, $fr);
+push(@cats, $ba);
+print("The new list is @cats.\n");
+
+# variable interpolation in lists
+my @fred = qw(eating rocks is wrong);
+my $fred = "right"; # scalar $fred
+print("This is $fred[3].\n"); # gets the list last index
+print("This is the scalar one ${fred}[3].\n");
+print "This is $fred" . "[3]\n"; # note the concatenation
+print "This is $fred\[3]\n"; # backslash escaping
+
+# foreach control structure
+foreach my $word (@fred){
+  print "The name is $word.\n";
+}
+
+# using the list @cats
+foreach my $cat (@cats){
+  $cat = "\t$cat.";
+  $cat .= "\n"; # concatenation using the .= operator
+}
+print "The cats are:\n", @cats; # each one is indented on its own line

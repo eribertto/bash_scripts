@@ -1,0 +1,45 @@
+# bash function for cd-ing to faraway places
+# Effective Linux on the Command Line Ex. 4.1
+qcd () {
+    case "$1" in
+        docs)
+            cd $HOME/Documents
+            ;;
+        dld)
+            cd $HOME/Downloads
+            ;;
+        music)
+            cd $HOME/Music
+            ;;
+        temp)
+            cd $HOME/Temp
+            ;;
+        gh)
+            cd $HOME/Github-repos
+            ;;
+        pix)
+            cd $HOME/Pictures
+            ;;
+        tutes)
+            cd $HOME/Tutorial
+            ;;
+        p5)
+            cd $HOME/perl5
+            ;;
+        vids)
+            cd $HOME/Videos
+            ;;
+        pub)
+            cd $HOME/Public
+            ;;
+        *)
+            # not listed above
+            echo "qcd: unknown key '$1'"
+            return 1
+            ;;
+    esac
+    # show wheres your location
+    echo -e "\nYour location now: $PWD" | lolcat
+    }
+    # setup tab completion
+    complete -W "docs dld music temp gh pix tutes p5 vids pub" qcd

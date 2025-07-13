@@ -18,5 +18,5 @@ echo "Second to last array is: ${my_array[-2]}"
 letters=('A''B''C''D''E')
 SCRNAME="$(basename "$0")"
 echo "The name of this script is: $SCRNAME"
-echo "${letters[@]}"
+echo "The array items are ${letters[@]}"
 #echo "the scriptname $(SCRNAME) value is ${letters[@]}"

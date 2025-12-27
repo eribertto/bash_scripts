@@ -7,7 +7,7 @@ use v5.38;
 
 {
     print "Please enter a number: ";
-    chomp( my $num = <STDIN> );
-    my $root = sqrt $num; # get the square root
+    chomp( my $num = <> );
+    my $root = sqrt $num;    # get the square root
     print "The square root of $num is $root.\n"
 }

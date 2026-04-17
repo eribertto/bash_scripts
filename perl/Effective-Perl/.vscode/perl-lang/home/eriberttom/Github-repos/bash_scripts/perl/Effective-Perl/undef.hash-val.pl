@@ -1,0 +1,1 @@
+{"version":5,"vars":[{"line":9,"name":"%hash","localvar":"my","containerName":null,"kind":13,"definition":"my"},{"kind":13,"containerName":null,"name":"%hash","line":11},{"containerName":"","line":11,"name":"warnings","kind":2},{"containerName":null,"name":"%hash","line":13,"kind":13},{"line":14,"name":"%hash","containerName":null,"kind":13}]}

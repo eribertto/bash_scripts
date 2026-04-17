@@ -1,0 +1,1 @@
+{"version":5,"vars":[{"line":8,"name":"@odds","localvar":"my","definition":"my","kind":13,"containerName":null},{"definition":"my","kind":13,"containerName":null,"line":10,"name":"@even","localvar":"my"},{"localvar":"my","name":"@punctuations","line":12,"containerName":null,"definition":"my","kind":13}]}
